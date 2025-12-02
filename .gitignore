@@ -1,0 +1,40 @@
+# --- 1. BLOCK ALL BY DEFAULT ---
+*
+
+# --- 2. ALLOWLIST (Strictly Essential Code Only) ---
+# Root Files
+!.gitignore
+!README.md
+!requirements.txt
+!evaluate_reasoning.py
+
+# Source Code
+!src/
+!src/**
+
+# Configurations
+!configs/
+!configs/**
+
+# --- 3. SPECIFIC IGNORES (Override Allowlist) ---
+# Secrets & Environment
+.env
+.venv/
+venv/
+
+# System & IDE Files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+
+# Logs & Output Directories
+logs/
+*.log
+output/
+out/

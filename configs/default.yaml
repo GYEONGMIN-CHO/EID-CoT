@@ -1,0 +1,11 @@
+normalizer: ${NORMALIZER:-scispacy_biosyn}
+scispacy_model: ${SCISPACY_MODEL:-en_ner_bc5cdr_md}
+dictionaries:
+  mesh_tsv: ${DICT_MESH_TSV:-./resources/dicts/mesh.tsv}
+  hgnc_tsv: ${DICT_HGNC_TSV:-./resources/dicts/hgnc.tsv}
+  ncbigene_tsv: ${DICT_NCBIGENE_TSV:-./resources/dicts/ncbigene.tsv}
+retriever:
+  top_k: 5
+evaluation:
+  use_uRAF: true
+
